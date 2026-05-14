@@ -1,0 +1,251 @@
+@import './fonts/fonts.scss';
+@import './variables.scss';
+@import './grid/CSS-grid-del.scss';
+@import './header/header.scss';
+@import './footer/footer.scss';
+@import './sections/sections.scss';
+
+
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--body-font);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100%;
+    overflow-x: hidden;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+
+.p {
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: 400;
+
+    @media screen and (max-width: $lg) {
+        font-size: .833rem;
+    }
+
+    @media screen and (max-width: $md) {
+        font-size: .75rem;
+    }
+
+    &.small {
+        font-size: .833rem;
+        font-weight: 300;
+
+        @media screen and (max-width: $lg) {
+            font-size: .75rem;
+        }
+    }
+}
+
+
+.h1,
+.h2 {
+    font-size: 2.25rem;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $lg) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: $md) {
+        font-size: 1.667rem;
+    }
+
+    @media screen and (max-width: $sm) {
+        font-size: 1.333rem;
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.section {
+    padding-top: 3.333rem;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100vh;
+    position: relative;
+
+    @media screen and (max-width: $md) {
+        padding-top: 2.667rem;
+    }
+
+    &.goodhavenbooks {
+        background: url('../assets/images/goodhavenbooks.webp');
+    }
+
+    &.nandua {
+        background: url('../assets/images/nandua.webp');
+    }
+
+    &.urbanbuzz {
+        background: url('../assets/images/Urbanbuzz.webp');
+    }
+
+    @media screen and (max-width: $sm) {
+        padding-top: 1.667rem;
+
+        .section-header {
+            flex-direction: column-reverse;
+            gap: 1.667rem;
+
+            .back-to-top-btn {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+.link {
+    font-size: 1.333rem;
+    text-decoration: underline;
+    line-height: 120%;
+    font-weight: 300;
+    display: block;
+    text-underline-offset: .416rem;
+
+    @media screen and (max-width: $lg) {
+        font-size: 1.083rem;
+    }
+
+    @media screen and (max-width: $sm) {
+        font-size: 1rem;
+    }
+
+    &:visited {
+        color: (var(--white));
+    }
+}
+
+.primary-btn {
+    position: relative;
+    display: inline-flex;
+    background: var(--orange);
+    padding: 0 .833rem;
+    height: 2.25rem;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--border);
+    background: rgba(34, 34, 34, 0.1);
+    backdrop-filter: blur(12px);
+
+    @media screen and (max-width: $sm) {
+        padding: 0 .667rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn-text {
+        font-size: .75rem;
+        line-height: 100%;
+        font-weight: 300;
+        letter-spacing: 20%;
+        text-transform: uppercase;
+        text-box-trim: trim-both;
+        text-box-edge: cap alphabetic;
+
+        @media screen and (max-width: $md) {
+            font-size: .667rem;
+        }
+
+        @media screen and (max-width: $sm) {
+            font-size: .583rem;
+            line-height: 110%;
+        }
+    }
+
+    .btn-icon {
+        @media screen and (max-width: $sm) {
+            min-width: .833rem;
+            height: .833rem;
+            width: .833rem;
+        }
+    }
+}
+
+.section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.333rem;
+
+    @media screen and (max-width: $sm) {
+        flex-direction: column;
+    }
+
+    .section-logo {
+        max-width: 300px;
+
+        @media screen and (max-width: $md) {
+            max-width: 248px;
+        }
+    }
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.back-to-top-btn {
+    display: flex;
+    align-items: center;
+    gap: .416rem;
+    cursor: pointer;
+
+    .icon-block {
+        width: .833rem;
+        min-width: .833rem;
+        height: .833rem;
+    }
+
+    .btn-text {
+        font-size: .667rem;
+        line-height: 100%;
+        font-weight: 300;
+        letter-spacing: 20%;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+#loom-companion-mv3 {
+    display: none !important;
+}

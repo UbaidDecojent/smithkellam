@@ -1,0 +1,56 @@
+.site-header {
+    padding-top: 2.5rem;
+    height: 100vh;
+    background: url('../assets/images/smithkellam-hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .header-btn {
+        padding: 0 .5rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(34, 34, 34, 0.1);
+        backdrop-filter: blur(12px);
+        height: 1.583rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .833rem;
+        width: 9.167rem;
+        text-decoration: none;
+        color: var(--white);
+
+        &:not(:last-child) {
+            margin-bottom: .333rem;
+        }
+
+        @media screen and (max-width: $sm) {
+            height: 1.333rem;
+            padding: 0 .333rem;
+        }
+
+        .btn-text {
+            font-size: .75rem;
+            line-height: 100%;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 20%;
+
+            @media screen and (max-width: $sm) {
+                font-size: .667rem;
+            }
+        }
+
+        .btn-icon {
+            width: .833rem;
+            height: .833rem;
+            min-width: .833rem;
+
+            @media screen and (max-width: $sm) {
+                width: .75rem;
+                min-width: .75rem;
+                height: .75rem;
+            }
+        }
+    }
+}

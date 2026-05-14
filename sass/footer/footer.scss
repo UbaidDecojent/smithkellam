@@ -1,0 +1,65 @@
+.site-footer {
+    background-color: var(--green);
+    padding-top: 1.5rem;
+    padding-bottom: 3.333rem;
+
+    @media screen and (max-width: $sm) {
+        padding-bottom: 2.5rem;
+    }
+
+    .back-to-top-btn {
+        margin-bottom: 1rem;
+        justify-content: flex-end;
+    }
+
+    .footer-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: $sm) {
+            flex-direction: column;
+            gap: 1.333rem;
+        }
+
+        .footer-logo {
+            max-width: 410px;
+            width: 409px;
+
+            @media screen and (max-width: $lg) {
+                width: 350px;
+            }
+
+            @media screen and (max-width: $md) {
+                width: 240px;
+            }
+
+            @media screen and (max-width: $sm) {
+                max-width: 100%;
+                width: 100%;
+            }
+
+
+        }
+
+        .copyright-block {
+            @media screen and (max-width: $sm) {
+                width: 100%;
+            }
+
+            .link {
+                margin-bottom: .916rem;
+            }
+
+            .small {
+                display: flex;
+                justify-content: flex-end;
+
+                @media screen and (max-width: $sm) {
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+
+}

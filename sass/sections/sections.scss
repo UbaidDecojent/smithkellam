@@ -1,0 +1,31 @@
+.section {
+
+    .section-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+
+        @media screen and (max-width: $lg) {
+            top: 45%;
+        }
+
+        .h1 {
+            margin-bottom: .833rem;
+
+            @media screen and (max-width: $md) {
+                margin-bottom: .667rem;
+            }
+        }
+
+        .p {
+            margin-bottom: 1.333rem;
+
+            @media screen and (max-width: $md) {
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+}
